@@ -26,7 +26,7 @@ ___
 * Select the path of the download, or by default the key pair will be in the downloads folder 
 * If needed copy the key pair to the `/.ssh` folder
 * Now open your terminal and input `sudo chmod 600 ~/<default key pair file path>`
-* In the terminal input `sudo ssh i ~/<default key pair file path>` ubuntu@<Input Your Pubilic IP address>` to create an instance on your terminal 
+* In the terminal input `sudo ssh i ~/'default key pair file path' ubuntu@<Input Your Pubilic IP address>` to create an instance on your terminal 
 
 **2. Congfigure the local tmiezone to UTC (Coordinated Universal Time):**
 
