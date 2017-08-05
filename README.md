@@ -4,7 +4,7 @@
 
 ![](http://progressed.io/bar/100?title=Progress)
 
-The objective of this project was to configure(install updates, secure it from attacks, and installing/configure database servers) using a baseline installation of a Linux distribution on a virtual machine serve using [Amazon Web Services Lightsail Ubuntu](https://aws.amazon.com) to host a previous web application [Movie Catalog Project 5](https://github.com/eddiebrunson/FSND-Item-Catalog). 
+The objective of this project was to configure(install updates, secure it from attacks, and installing/configure database servers) using a baseline installation of a Linux distribution on a virtual machine server using [Amazon Web Services Lightsail Ubuntu](https://aws.amazon.com) to host a previous web application [Movie Catalog Project 5](https://github.com/eddiebrunson/FSND-Item-Catalog). 
 
 ___
 
@@ -149,7 +149,7 @@ ___
 * Create the config file for the virtual host by using command `sudo nano /etc/apache2/sites-available/catalog.conf`
 * Input the following into the file: 
 ```python
-   <VirtualHost *:80>
+<VirtualHost *:80>
   ServerName `Your aws host address goes here`.amazonaws.com
   ServerAdmin admin@mywebsite.com
   ServerAlias `Your aws host address goes here`.amazonaws.com
