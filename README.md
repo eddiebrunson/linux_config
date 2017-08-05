@@ -73,7 +73,7 @@ ___
 * Copy the public key on your local computer's terminal 
 * Now, paste it into `sudo nano .ssh/authorized_keys` 
 * Save the file `control + x, then y for yes, and enter`
-* Change the permission of the files using `sudo chmod 700 .ssh` and `sudo chmod 600 .shh/authorized_keys
+* Change the permission of the files using `sudo chmod 700 .ssh` and `sudo chmod 600 .shh/authorized_keys`
 * Change password authorization from yes to no by editing that line in `sudo nano /etc/ssh/sshd_config`
 * Login grader with ssh with this command `ssh -i ~/.ssh/'path to key'grader@'Your Public IP Address'` 
 
@@ -81,6 +81,7 @@ ___
 **5. Change the default ssh port from **20** to **2200**:**
 
 * Enter command `sudo nano /etc/ssh/sshd_config` and add `port 2200` under the line `port 22`
+* Then remove `port 22`
 * Save the file `control + x, then y for yes, and enter`
 * Restart ssh `sudo service ssh restart`
 
@@ -110,7 +111,7 @@ ___
 
 **10. Make .git files inaccessible from the web:**
 
-* Got to `cd /var/www/catalog/ and make make a file `sudo nano .htaccess`
+* Got to `cd /var/www/catalog/` and make make a file `sudo nano .htaccess`
 * Put the following inside the file `RedirectMatch 404 /\.git`
 * Save the file `control + x, then y for yes, and enter`
 
