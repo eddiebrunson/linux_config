@@ -31,7 +31,7 @@ ___
 **2. Congfigure the local tmiezone to UTC (Coordinated Universal Time):**
 
 * In the terminal input `sudo dpkg-reconfigure tzdata` 
-* A prompt will appear, select none of the above, and then select UTC
+* A prompt will appear, select none of the above, and then select `UTC`
 
 **3. Secure your server:**
 
@@ -69,13 +69,13 @@ ___
 * Now, login to the grader account using password `grader` and command `ssh - v grader@'Your public IP Address goes here' -p 2200`
 * Make a .ssh directory `mkdir .ssh`
 * Now, make a file to store the key pair `touch .ssh/authorized_keys`
-* On your local computer terminal, show the public key using `sudo cat .ssh/"path to where you saved the public key" should end with `.pub`
+* On your local computer terminal, show the public key using `sudo cat .ssh/"path to where you saved the public key"` should end with `.pub`
 * Copy the public key on your local computer's terminal 
 * Now, paste it into `sudo nano .ssh/authorized_keys` 
 * Save the file `control + x, then y for yes, and enter`
 * Change the permission of the files using `sudo chmod 700 .ssh` and `sudo chmod 600 .shh/authorized_keys
 * Change password authorization from yes to no by editing that line in `sudo nano /etc/ssh/sshd_config`
-* Login grader with ssh with this command `ssh -i ~/.ssh/'path to key'grader@'Your Public IP Address' 
+* Login grader with ssh with this command `ssh -i ~/.ssh/'path to key'grader@'Your Public IP Address'` 
 
 
 **5. Change the default ssh port from **20** to **2200**:**
