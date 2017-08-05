@@ -98,7 +98,7 @@ ___
 * Configure a mod_wsgi file
 * Restart apache2 `sudo apache2 ctl restart`
 
-**8. Install git:*
+**8. Install git:**
 
 * Use command `sudo apt-get install git`
 
